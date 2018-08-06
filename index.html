@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formularz rejestracji na wydarzenie</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <form action="https://formspree.io/dorota.sarba@gmail.com" method="POST">
+        <input type="text" name="fname" placeholder="Imię" required>
+        <input type="text" name="sname" placeholder="Nazwisko" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+
+        <label for="ticket">Wybierz rodzaj biletu</label>
+        <select name="ticket" id="ticket">
+            <option value="normalny">Normalny</option>
+            <option value="premium">Premium</option>
+            <option value="VIP">VIP</option>
+        </select>
+
+        <p>Menu wegańskie:</p>
+        <label> <input type="radio" name="vegan-menu" value="tak">Tak</label>
+        <label></label><input type="radio" name="vegan-menu" value="nie" checked>Nie</label>
+
+        <label for="message">Dodatkowe uwagi:</label>
+        <textarea name="message" id="message"></textarea>
+
+        <label></label><input type="checkbox" name="agreement" id="" required>Wyrażam zgodę na przetwarzanie danych osobowych na potrzeby realizacji zapisów.</label>
+
+        <input type="submit" value="Zapisz się!">
+
+    </form>
+
 </body>
+
 </html>
