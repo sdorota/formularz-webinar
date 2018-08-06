@@ -1,0 +1,28 @@
+body {
+    background-color: #fe7800;
+}
+
+form {
+    background-color: #fff;
+    width: 500px;
+    padding: 40px;
+    border-top: 15px solid #13326c;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 150px;
+    margin-top: 20px;
+    background-color: #13326c;
+    color: #fff;
+    cursor: pointer;
+}
